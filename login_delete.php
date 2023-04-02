@@ -1,7 +1,7 @@
 <?php
 include('db.php');
 include('function.php');
-createTable();
+updateTable();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +15,20 @@ createTable();
     <form action="" method="post">
         Name : <input type="text" name='name'><br>
         Password : <input type="text" name="password" id=""><br>
-        <input type="submit" name='submit'>
+
+        <select name="id" id="">
+            
+               
+               
+                <?php 
+                
+                readTable();
+                ?>
+               
+           
+        </select>
+        <input type="submit" name='submit' value='delete'>
     </form>
 </body>
 </html>
+
